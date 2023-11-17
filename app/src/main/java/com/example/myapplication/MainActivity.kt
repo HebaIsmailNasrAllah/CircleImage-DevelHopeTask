@@ -8,6 +8,7 @@ import android.view.View
 import android.view.View.OnHoverListener
 import android.widget.Button
 import android.widget.ImageView
+import com.bumptech.glide.Glide
 import com.example.myapplication.databinding.ActivityMainBinding
 import de.hdodenhof.circleimageview.CircleImageView
 
@@ -24,6 +25,11 @@ class MainActivity : AppCompatActivity() {
         binding.ivLocalTwo.setImageResource(R.drawable.local_two)
         binding.ivLocalThree.setImageResource(R.drawable.local_three)
         binding.ivLocalFour.setImageResource(R.drawable.local_four)
+
+        Glide.with(this).load(FIRST_IMAGE).into(binding.ivRemoteOne)
+        Glide.with(this).load(SECOND_IMAGE).into(binding.ivRemoteTwo)
+        Glide.with(this).load(THIRD_IMAGE).into(binding.ivRemoteThree)
+        Glide.with(this).load(FOURTH_IMAGE).into(binding.ivRemoteFour)
 
 
     }
