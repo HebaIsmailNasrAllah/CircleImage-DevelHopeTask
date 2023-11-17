@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/local_images"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:src="@drawable/ic_launcher_background"
+            android:clickable="true"
+            android:padding="5dp"
+            android:background="@drawable/bg_color"
+            app:strokeColor="@color/image_selector"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:strokeWidth="5dp"
+            android:focusable="true"
+            android:longClickable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/iv_local_one"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_local_three"
+            app:layout_constraintTop_toBottomOf="@+id/iv_local_three"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:src="@drawable/ic_launcher_background"
+            android:clickable="true"
+            android:padding="5dp"
+            android:background="@drawable/bg_color"
+            app:strokeColor="@color/image_selector"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:strokeWidth="5dp"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:focusable="true"
+            android:longClickable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/iv_local_two"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_local"/>
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:src="@drawable/ic_launcher_background"
+            android:background="@drawable/bg_color"
+            app:strokeColor="@color/image_selector"
+            android:clickable="true"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:strokeWidth="5dp"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:focusable="true"
+            android:longClickable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/iv_local_three"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_local"/>
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:src="@drawable/ic_launcher_background"
+            android:background="@drawable/bg_color"
+            app:strokeColor="@color/image_selector"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:strokeWidth="5dp"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:focusable="true"
+            android:longClickable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/iv_local_four"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="@+id/iv_local_two"
+            app:layout_constraintTop_toBottomOf="@+id/iv_local_two"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <TextView
+            android:id="@+id/tv_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Remote Images"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_remote_one"
+            android:layout_width="56dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_launcher_background"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_remote_two"
+            android:layout_width="56dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_launcher_background"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_remote_three"
+            android:layout_width="56dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_launcher_background"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_remote_four"
+            android:layout_width="56dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_launcher_background"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout-->
+</androidx.constraintlayout.widget.ConstraintLayout>
